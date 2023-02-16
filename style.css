@@ -7,14 +7,11 @@
     font-family: 'Work Sans';
 }
 
-.container {
-    /* margin: 0; */
-    /* border: 2px solid red; */
-}
 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
 }
 
 .g3 {
@@ -292,6 +289,7 @@
 .sample_items {
     height: 220px;
     width: 160px;
+    transition: ease-in-out .9s;
 }
 
 
@@ -299,7 +297,16 @@
     height: 220px;
     width: 160px;
     padding-top: 50px;
+    transition: ease-in-out .9s;
+}
 
+
+.sample_item:hover {
+    transform: scale(1.5) rotate(45deg); 
+}
+
+.sample_items:hover {
+    transform: scale(1.1); 
 }
 
 @media screen and (max-width: 576px) {
@@ -350,6 +357,8 @@
         /* border: 2px solid red; */
     }
 
+    /* ---------------- feature section css -------------------- */
+
     .features-section {
         display: flex;
         flex-direction: column-reverse;
@@ -357,10 +366,10 @@
     }
     
     .features-images {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 15px;
-        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     } 
 
     .feature_image {
@@ -556,6 +565,10 @@
 
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+    .container {
+        margin: 0px 35px;
+    }
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -566,4 +579,502 @@
     .nav_items {
         display: block;
     }
+
+    .brand_new h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;   
+    }
+
+    .details {
+        font-size: 13px;
+        line-height: 1.5;
+        font-weight: 100;
+        color: gray;
+    }
+
+    .explore_btn {
+        font-size: 18px;
+        border: none;
+        padding: 15px 20px;
+        background-color: orange;
+        border-radius: 6px;
+        margin-top: 40px;
+        color: white;
+    }
+    
+    .banner_img {
+        height: 210px;
+        width: 100%;
+        margin-top: 50px;
+        /* border: 2px solid red; */
+    }
+
+    /* ---------------- feature section css -------------------- */
+
+    .features-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px 0px;
+    }
+    
+    .features-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .feature_image {
+        height: 280px;
+        width: 280px;
+        text-align: center;
+    }
+
+    .feature_list {
+        text-align: start;
+        padding-left: 0px;
+        padding-top: 35px;
+        padding-bottom: 40px;
+    } 
+
+    .feature_list > h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .feature_list > p {
+        font-size: 13px;
+        font-weight: thin;
+    }
+
+    .love_section {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px;
+    }
+    
+    .architect_img {
+        height: 450px;
+        text-align: center;
+        padding-left: 27px;
+    }
+
+    .love_enjoy_div {
+        border-left: 4px solid orange;
+    }
+    
+    
+    .love_enjoy_div h1 {
+        font-size: 25px;
+    }
+    
+    .love_para {
+        margin-top: 20px;
+        color: gray;
+    }
+    
+    .love_details {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 36px;
+        font-size: 15px;
+    }
+    
+    .experienxe_btn {
+        font-size: 25px;
+        border: none;
+        padding: 25px 35px;
+        background-color: orange;
+        border-radius: 6px;
+        margin-top: 40px;
+        color: white;
+        align-items: center;
+    }
+    
+    .experienxes_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translate(0px, -30px);
+        margin-bottom: 20px;
+    }
+    
+    .year {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    /* ----------- Some Facts  section ------------------- */
+
+    .facts_section {
+        margin: 0px 0px;
+    }
+
+    .facts_title {
+        font-size: 35px;
+    }
+
+    .facts_details {
+        margin-top: 25px;
+        color: gray;
+    }
+
+    .facts_boxes {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        margin-top: 60px;
+        border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .facts_box {
+        height: 160px;
+        width: 160px;
+        border: 1px solid orange;
+        border-radius: 9px;
+        text-align: center;
+    }
+
+    .icon {
+        margin-top: 30px;
+    }
+
+    /*  ----------- Our Sponspors section ------------  */
+
+    .sponsor_section {
+        margin: 0px;
+        margin-top: 80px;
+    }
+
+
+    .sponsor {
+        text-align: center;
+    }
+
+
+    .sponsor h1 {
+        font-size: 30px;
+    }
+
+    .sponsor_details {
+        margin-top: 25px;
+    }
+
+    .sponsors_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .sponsors_items {
+        height: 80px;
+        width: 150px;
+    }
+
+    .sponsors_img {
+        height: 30px;
+    }
+
+    /* ------------- footer section ------------- */
+
+    .footer {
+        text-align: center;
+        margin: 130px 0px;
+        font-size: 13px;
+    } 
+
+    /* ------------- new sample section ------------- */
+
+
+    .sample_section {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .sample_lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0px;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .sample_items {
+        height: 220px;
+        width: 160px;
+    }
+
+
+    .sample_item {
+        height: 220px;
+        width: 160px;
+        padding-top: 50px;
+
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        margin: 0px 35px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_items {
+        display: block;
+    }
+
+    .brand_new h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;   
+    }
+
+    .details {
+        font-size: 13px;
+        line-height: 1.5;
+        font-weight: 100;
+        color: gray;
+    }
+
+    .explore_btn {
+        font-size: 18px;
+        border: none;
+        padding: 15px 20px;
+        background-color: orange;
+        border-radius: 6px;
+        margin-top: 40px;
+        color: white;
+    }
+    
+    .banner_img {
+        height: 210px;
+        width: 100%;
+        margin-top: 50px;
+        /* border: 2px solid red; */
+    }
+
+    /* ---------------- feature section css -------------------- */
+
+    .features-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px 0px;
+    }
+    
+    .features-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .feature_image {
+        height: 240px;
+        width: 240px;
+        /* text-align: center; */
+    }
+
+    .feature_list {
+        text-align: start;
+        padding-left: 0px;
+        padding-top: 35px;
+        padding-bottom: 40px;
+    } 
+
+    .feature_list > h1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .feature_list > p {
+        font-size: 13px;
+        font-weight: thin;
+    }
+
+    .love_section {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px;
+    }
+    
+    .architect_img {
+        height: 450px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .love_enjoy_div {
+        border-left: 4px solid orange;
+    }
+    
+    
+    .love_enjoy_div h1 {
+        font-size: 25px;
+    }
+    
+    .love_para {
+        margin-top: 20px;
+        color: gray;
+    }
+    
+    .love_details {
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 36px;
+        font-size: 15px;
+    }
+    
+    .experienxe_btn {
+        font-size: 25px;
+        border: none;
+        padding: 25px 35px;
+        background-color: orange;
+        border-radius: 6px;
+        margin-top: 40px;
+        color: white;
+        align-items: center;
+    }
+    
+    .experienxes_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translate(0px, -30px);
+        margin-bottom: 20px;
+    }
+    
+    .year {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    /* ----------- Some Facts  section ------------------- */
+
+    .facts_section {
+        margin: 0px 0px;
+    }
+
+    .facts_title {
+        font-size: 35px;
+    }
+
+    .facts_details {
+        margin-top: 25px;
+        color: gray;
+    }
+
+    .facts_boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        margin-top: 60px;
+    }
+
+    .facts_box {
+        height: 160px;
+        width: 160px;
+        border: 1px solid orange;
+        border-radius: 9px;
+        text-align: center;
+    }
+
+    .icon {
+        margin-top: 30px;
+    }
+
+    /*  ----------- Our Sponspors section ------------  */
+
+    .sponsor_section {
+        margin: 0px;
+        margin-top: 80px;
+    }
+
+
+    .sponsor {
+        text-align: center;
+    }
+
+
+    .sponsor h1 {
+        font-size: 30px;
+    }
+
+    .sponsor_details {
+        margin-top: 25px;
+    }
+
+    .sponsors_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .sponsors_items {
+        height: 80px;
+        width: 150px;
+    }
+
+    .sponsors_img {
+        height: 30px;
+    }
+
+    /* ------------- footer section ------------- */
+
+    .footer {
+        text-align: center;
+        margin: 130px 0px;
+        font-size: 13px;
+    } 
+
+    /* ------------- new sample section ------------- */
+
+
+    .sample_section {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .sample_lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .sample_items {
+        height: 200px;
+        width: 140px;
+    }
+
+
+    .sample_item {
+        height: 200px;
+        width: 140px;
+        padding-top: 50px;
+
+    }
+    
+
 }
